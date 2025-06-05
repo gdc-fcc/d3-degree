@@ -1,0 +1,35 @@
+#title {
+  text-align: center;
+  font-size: 2em;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.tick{
+  font-size: 16px;
+}
+
+.cell:hover{
+  stroke: black;
+  stroke-width: 2px;
+}
+
+#tooltip{
+  position: absolute;
+  top: 620px;
+  left: 630px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.7);
+  width: 200px;
+  display: none;
+}
+
+#legend text {
+  alignment-baseline: top;
+  text-anchor: middle;
+}

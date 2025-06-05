@@ -1,0 +1,41 @@
+#title {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#subtitle {
+  text-align: center;
+}
+
+.dot {
+  r: 7px;
+  transition: r 0.2s, opacity 0.2s;
+  transition-timing-function: ease;
+}
+
+.dot:hover{
+  r: 15px;
+  opacity: 0.5;
+}
+
+#tooltip {
+  position: absolute;
+  left: 550px;
+  top: 100px;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.05);
+  display: none;
+}
+
+#tooltip > hr {
+  margin-top: 4px;
+  margin-bottom: 4px
+}
+
+.legend-symbol {
+  width: 15px;
+  height: 15px;
+}

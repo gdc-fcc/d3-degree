@@ -1,0 +1,30 @@
+#title {
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.bar {
+  fill: steelblue;
+  fill: rgb(51, 173, 255)
+}
+
+.bar:hover{
+  fill: steelblue;
+}
+
+body {
+  width: 900px;
+  margin: auto;
+  position: relative;
+}
+
+#tooltip{
+  position: absolute;
+  display: none;
+  border: 2px solid black;
+  width: 120px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: silver;
+  top: 300px;
+}

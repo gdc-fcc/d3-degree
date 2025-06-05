@@ -1,0 +1,52 @@
+#title {
+  text-align: center;
+  font-size: 3.3em;
+  font-weight: bold;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+svg{
+  //border: 1px solid black;
+  display: block;
+  vertical-align: middle;
+  margin: auto;
+}
+
+body{
+  width: 960;
+  margin: auto;
+  font-family: Arial;
+}
+
+#tooltip{
+  position: absolute;
+  top: 620px;
+  left: 630px;
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,0.7);
+  //width: 200px;
+  display: none;
+}
+
+.county{
+  stroke-width: 0.5px;
+  stroke: white;
+}
+
+.county:hover{
+  stroke-width: 1.5px;
+  stroke: black;
+}
+
+#legend text {
+  alignment-baseline: top;
+  text-anchor: middle;
+  font-size: 0.7em;
+}
