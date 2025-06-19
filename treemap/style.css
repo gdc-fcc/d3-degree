@@ -39,4 +39,18 @@ h1 {
     padding: 5px;
     word-wrap: break-word;
     overflow: hidden;
+    pointer-events: none;
+}
+
+foreignObject {
+    pointer-events: none;
+}
+
+#tooltip {
+    position: fixed;
+    width: 300px;
+    background-color: #ffffffee;
+    display: none;
+    padding: 1rem;
+    border-radius: 0.3rem;
 }
