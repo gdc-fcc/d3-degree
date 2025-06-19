@@ -29,21 +29,23 @@
         .attr('y', d => d.y0)
         .attr('width', d => d.x1 - d.x0)
         .attr('height', d => d.y1 - d.y0)
-        .style("stroke", "black")
+        .style("stroke", "#444")
         .attr("data-name", d => d.data.name)
         .attr("data-value", d => d.data.value)
         .attr("data-category", d => d.data.category)
         .attr("fill", d => color(d.parent));
     svg
-        .selectAll("text")
+        .selectAll("foreignObject")
         .data(root.leaves())
         .enter()
-        .append("text")
-        .attr("x", d => d.x0 + 5)
-        .attr("y", d => d.y0 + 20)
-        .text(d => d.data.name)
-        .attr("font-size", "15px")
-        .attr("fill", "black");
+        .append("foreignObject")
+        .attr('x', d => d.x0)
+        .attr('y', d => d.y0)
+        .attr('width', d => d.x1 - d.x0)
+        .attr('height', d => d.y1 - d.y0)
+        .append("xhtml:div")
+        .attr("class", "tile-label")
+        .html(d => d.data.name);
     legend = svg.append('g').attr('id', 'legend');
     legend
         .selectAll('rect')

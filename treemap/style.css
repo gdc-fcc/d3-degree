@@ -34,3 +34,9 @@ h1 {
     margin-inline: auto;
     width: fit-content;
 }
+
+.tile-label {
+    padding: 5px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
